@@ -15,4 +15,5 @@ module.exports = app => {
       store[key] = null
     },
   }
+  app.config.coreMiddleware.push('auth')
 }

@@ -16,7 +16,10 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1611672104308_4745'
 
   // add your middleware config here
-  config.middleware = []
+  config.middleware = ['httpLog']
+  config.httpLog = {
+    type: 'all',
+  }
   config.security = {
     csrf: {
       enable: false,
@@ -43,6 +46,9 @@ module.exports = appInfo => {
     httpOnly: true,
     maxAge: 1000 * 50,
     renew: true,
+  }
+  config.auth = {
+    exclude: ['/home', '/user', '/login', '/logout'],
   }
   // add your user config here
   const userConfig = {

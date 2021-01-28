@@ -7,6 +7,7 @@
     "declarations": true
   },
   "dependencies": {
+    "dayjs": "^1.10.4",
     "egg": "^2.15.1",
     "egg-scripts": "^2.11.0",
     "egg-validate": "^2.0.2",
@@ -25,7 +26,7 @@
     "prettier": "^2.2.1"
   },
   "engines": {
-    "node": ">=10.0.0"
+     "node": ">=10.0.0"
   },
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-lession",
